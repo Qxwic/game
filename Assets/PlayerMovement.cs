@@ -14,7 +14,7 @@ public float moveSpeed = 5f;  // Скорость перемещения шара
 
 
         // Перемещаем объект с учетом времени
-        Vector3 move = new Vector3(moveX, 0, 0) * moveSpeed * Time.deltaTime;
+        Vector3 move = new Vector3(0, 0, moveX) * moveSpeed * Time.deltaTime;
 
         // Применяем движение к объекту
         transform.Translate(move);
